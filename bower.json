@@ -1,0 +1,23 @@
+{
+  "name": "yotube",
+  "version": "0.0.0",
+  "appPath": "src",
+  "dependencies": {
+    "angular": "1.2.6",
+    "angular-resource": "1.2.6",
+    "angular-cookies": "1.2.6",
+    "angular-sanitize": "1.2.6",
+    "angular-route": "1.2.6",
+    "angular-animate": "1.2.6",
+    "jquery": "*",
+    "modernizr": "*" ,
+    "foundation": ">= 5.2.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.6",
+    "angular-scenario": "1.2.6"
+  },
+  "overrides": {
+
+  }
+}

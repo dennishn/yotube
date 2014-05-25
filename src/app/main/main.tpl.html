@@ -1,0 +1,20 @@
+<p><small>main.tpl.html</small></p>
+
+<div class="row" ng-repeat="video in videos" id="{{video.contentDetails.videoId}}" image-loaded>
+    <div class="small-12 columns">
+        <div class="panel">
+            <p class="lead">{{video.snippet.title}}</p>
+            <img ng-src="{{video.snippet.thumbnails.high.url}}" alt="{{video.snippet.title}}">
+            <div youtube-player youtube-id="{{video.snippet.resourceId.videoId}}"></div>
+            <p>{{video.snippet.description}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-12 columns">
+        <p>Showing <strong>{{currentPage}}</strong> of <strong>{{maxPages}}</strong></p>
+        <button ng-show="prevPage" ng-click="getPrevPage()">Prev</button>
+        <button ng-show="nextPage" ng-click="getNextPage()">Next</button>
+    </div>
+</div>
